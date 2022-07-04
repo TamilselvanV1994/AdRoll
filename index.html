@@ -13,20 +13,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdRoll Testing</title>
+<<<<<<< HEAD
        <style>
         h1, img {
+=======
+    <script type="text/javascript">
+    adroll_adv_id = "CG57GW7DMVEFPFCRLMA24J";
+    adroll_pix_id = "JICNHTTHU5FUJHTRMPSO3O";
+    adroll_version = "2.0";
+
+    (function(w, d, e, o, a) {
+        w.__adroll_loaded = true;
+        w.adroll = w.adroll || [];
+        w.adroll.f = [ 'setProperties', 'identify', 'track' ];
+        var roundtripUrl = "https://s.adroll.com/j/" + adroll_adv_id
+                + "/roundtrip.js";
+        for (a = 0; a < w.adroll.f.length; a++) {
+            w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function(n) {
+                return function() {
+                    w.adroll.push([ n, arguments ])
+                }
+            })(w.adroll.f[a])
+        }
+
+        e = d.createElement('script');
+        o = d.getElementsByTagName('script')[0];
+        e.async = 1;
+        e.src = roundtripUrl;
+        o.parentNode.insertBefore(e, o);
+    })(window, document);
+    adroll.track("pageView");
+</script>
+    <style>
+        h1 {
+>>>>>>> parent of 985d096 (Gif File Added)
             color: #0dbdff;
             position: absolute;
             top: 30%;
             left: 50%;
             transform: translate(-50%, -50%);
 
-        }
-         img {
-            max-width: 22%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
         }
     </style>
 </head>
@@ -37,6 +63,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <h1>Wecolme to AdRoll Testing Site</h1>  
-  <img src="https://acegif.com/wp-content/uploads/2021/4fh5wi/welcome-15.gif">
 </body>
 </html>
